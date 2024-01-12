@@ -15,7 +15,7 @@ const apiCall = async (endpoint: string) => {
     const response = await instance.get(endpoint);
     return response.data;
   } catch (error) {
-    console.error("error: ", JSON.stringify(error));
+    console.error("error: ", error);
   }
 };
 
